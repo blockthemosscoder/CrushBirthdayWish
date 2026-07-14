@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="index.css">
+
+<script>
+
+const card = document.querySelector(".main_wish");
+
+card.addEventListener("mouseenter",()=>{
+
+    for(let i=0;i<180;i++){
+
+        let c=document.createElement("span");
+
+        c.className="confettiPiece";
+
+        c.style.left=Math.random()*100+"%";
+
+        c.style.background=
+        `hsl(${Math.random()*360},100%,60%)`;
+
+        c.style.animationDuration=
+        (2+Math.random()*2)+"s";
+
+        c.style.transform=
+        `rotate(${Math.random()*360}deg)`;
+
+        card.appendChild(c);
+
+        setTimeout(()=>c.remove(),4000);
+
+    }
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div class="confetti"></div>
+
+<div class="container">
+
+<div class="main_wish">
+
+<div class="cover">
+    <h1>🎉 Hover Me 🎉</h1>
+    <p>Your Birthday Surprise</p>
+</div>
+
+<div class="content">
+
+<div class="row align-items-center justify-content-center g-5">
+
+<div class="col-lg-6 text-center text-lg-start">
+
+<h1>Happy Birthday,<br>Moe Chan Thar </h1>
+
+<p>
+I hope this year brings you lots of happiness,
+new adventures, endless laughter and dreams
+coming true. Thank you for always being amazing.
+Enjoy your special day!
+</p>
+
+<h4>15 • 7 • 2026</h4>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img src="./img/herimage.jpg"
+class="wish_img">
+
+</div>
+
+</div>
+
+</div>
+
+<div class="balloons">
+    <div class="balloon red"></div>
+    <div class="balloon blue"></div>
+    <div class="balloon yellow"></div>
+    <div class="balloon pink"></div>
+    <div class="balloon green"></div>
+</div>
+
+</div>
+
+</div>
+
+<div class="balloon balloon1"></div>
+<div class="balloon balloon2"></div>
+<div class="balloon balloon3"></div>
+
+</body>
+</html>
